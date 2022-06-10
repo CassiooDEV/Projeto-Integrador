@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+main{
+    display: flex;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 500;
+    flex-direction: column;
+    color: white;
+}
+
+.pictures{
+    background-image: url(IMG/apartamento-de-luxo-itaim-bibi-1000x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about{
+    background-image: url(IMG/0617_DEVSet_Banner_Site_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.form{
+    color: rgb(19, 88, 134);
+    padding: 50px ;
+    background-image: url(IMG/2.png);
+    background-position: center;
+    text-align: center;
+    background-color: rgb(22, 22, 24);
+    height: 30rem;
+}
+.form-input{
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 15px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    border-bottom: 2px solid rgb(19, 88, 134);
+    padding-bottom: 40px;
+}
+.cards-body{
+    width: 25rem;
+    height: 40rem; 
+    background-color: rgb(22, 22, 24); 
+    border-radius: 12px;
+}
+.caption{
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 100px;
+}
+.caption h1{
+    color: rgb(19, 88, 134);
+    font-weight: bold;
+}
+.btn-carousel{
+    background-color: rgb(19, 88, 134);
+    border-radius: 100px;
+    padding: 30px;
+}
+
