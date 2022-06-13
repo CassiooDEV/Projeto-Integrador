@@ -69,8 +69,8 @@ main{
     font-weight: bold;
 }
 .btn-carousel{
-    background-color: rgb(19, 88, 134);
-    border-radius: 100px;
-    padding: 30px;
+    border: 0.5px solid rgb(19, 88, 134);
+    border-radius: 80px;
+    padding: 25px;
 }
 
