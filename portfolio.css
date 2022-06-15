@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: #303030;
+    transition: .4s;
+}
+
+#resumoPortfolio{
+    width: 96%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    padding: 2%;
+}
+
+#titlePortfolio{
+    letter-spacing: 2px;
+    color: #29c6ed;
+    font-weight: 100;
+}
+
+.containerPortfolio{
+    padding: 2.5%;
+    background-color: #303030;
+}
+
+.portfolio{
+    background-color: #4e4e4e;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2%;
+    grid-gap: 2% 2%;
+}
+
+.blocosGrid{
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+
+.imgApartamento{
+    width: 100%;
+    height: 100%;
+}
+
+.descricaoApartamento{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: transparent;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.descricaoApartamento:hover{
+    border-top: 5px solid #29c6ed;
+    background-color: #303030e5;
+    display: flex;
+    transition: .4s;
+}
+
+.descricaoApartamento:hover .titleDescricao, .descricaoApartamento:hover .localDescricao{
+    display: flex;
+    transition: .4s;
+}
+
+.titleDescricao{
+    margin: 0;
+    color: #29c6ed;
+    text-transform: capitalize;
+    font-family: 'Montserrat';
+    display: none;
+}
+
+.localDescricao{
+    margin: 0;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Montserrat';
+    display: none;
+}
+
+@media all and (max-width: 1000px){
+    .portfolio{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 600px){
+    .portfolio{
+        grid-template-columns: 65%;
+        justify-content: center;
+        grid-gap: 0 0;
+        padding: 0;
+    }
+    .blocosGrid{
+        margin-bottom: 5%;
+    }
+    .blocosGrid:first-child{
+        margin-top: 5%;
+    }
+}
