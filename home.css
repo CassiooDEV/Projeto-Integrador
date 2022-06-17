@@ -37,11 +37,8 @@ main {
 .form {
     color: rgb(19, 88, 134);
     padding: 50px;
-    background-image: url(IMG/2.png);
-    background-position: center;
     text-align: center;
     background-color: rgb(22, 22, 24);
-    height: 30rem;
 }
 
 .form-input {
@@ -55,8 +52,8 @@ main {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.2rem;
     justify-items: center;
     border-bottom: 2px solid rgb(19, 88, 134);
     padding-bottom: 40px;
@@ -72,26 +69,19 @@ main {
 .caption {
     font-weight: 600;
     color: white;
-    background-color: rgba(0, 0, 0, 0.534);
-    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 5px;
+    width: 45%;
+    border-top: 7px solid rgb(19, 88, 134);
 }
 
-.caption h1 {
+.caption h2 {
     color: rgb(19, 88, 134);
     font-weight: bold;
 }
 
 .btn-carousel {
-    border: 0.5px solid rgb(19, 88, 134);
+    border: 5px solid rgb(10, 10, 12);
     border-radius: 80px;
     padding: 25px;
-}
-
-.card-about {
-    width: 25rem;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    background-color: rgb(10, 10, 12);
-    border-top: 10px solid rgb(19, 88, 134);
 }
