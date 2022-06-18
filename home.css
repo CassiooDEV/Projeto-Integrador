@@ -19,6 +19,9 @@ main {
     font-weight: 500;
     flex-direction: column;
     color: white;
+    margin: auto;
+    max-width: 1920px;
+    min-width: 320px;
 }
 
 .pictures {
@@ -32,6 +35,8 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 50px;
+    max-width: 1920px;
+    min-width: 320px;
 }
 
 .form {
@@ -53,10 +58,11 @@ main {
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.2rem;
+    grid-gap: 2rem;
     justify-items: center;
-    border-bottom: 2px solid rgb(19, 88, 134);
     padding-bottom: 40px;
+    max-width: 800px;
+    min-width: 320px;
 }
 
 .cards-body {
