@@ -338,27 +338,30 @@ body{
         right: 0;
         bottom: 0;
         margin: auto;
+        width: 330px;
     }
     .galeria{
         grid-template-columns: 1fr;
+        place-items: center;
     }
     .galeria-img{
-        height: 300px;
+        width: 80%;
+        height: 250px;
         border: none;
     }
     .galeria-img4{
         margin-bottom: 10%;
     }
     .divImgPlanta{
-        width: 400px;
-        height: 250px;
+        width: 300px;
+        height: 220px;
     }
     #iframe-div{
-        width: 400px;
-        height: 250px;
+        width: 300px;
+        height: 220px;
     }
     .iframe-local-div{
-        width: 400px;
-        height: 250px;
+        width: 300px;
+        height: 220px;
     }
 }
