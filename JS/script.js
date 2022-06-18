@@ -38,7 +38,7 @@ function verifEmail() {
     }
 }
 function verifState() {
-    if ((state.value = 0)) {
+    if (state.value >= 0) {
         alert('Preencha corretamente o estado');
     } else {
         vState = true;
