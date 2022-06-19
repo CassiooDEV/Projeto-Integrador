@@ -1,0 +1,10 @@
+
+/* Só colar isso no css da página que vc estiver */
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
