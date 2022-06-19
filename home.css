@@ -95,28 +95,34 @@ main {
 }
 
 @media all and (max-width: 1000px) {
+    .container{
+        justify-content: center;
+    }
     .cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
 
     .cards-body {
-        width: 22rem;
-        height: 37rem;
+        width: 100%;
+        height: max-content;
         background-color: rgb(22, 22, 24);
         border-radius: 12px;
+    }
+    .form{
+        display: none;
     }
 }
 
 @media all and (max-width: 800px) {
     .cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 100%;
     }
 
     .cards-body {
-        width: 20rem;
-        height: 35rem;
+        width: 100%;
+        height: max-content;
         background-color: rgb(22, 22, 24);
         border-radius: 12px;
     }
@@ -124,14 +130,15 @@ main {
 
 @media all and (max-width: 600px) {
     .cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
+        width: 100%;
     }
 
     .cards-body {
-        width: 15rem;
-        height: 30rem;
+        width: 100%;
         background-color: rgb(22, 22, 24);
         border-radius: 12px;
+        height: max-content;
     }
 }
