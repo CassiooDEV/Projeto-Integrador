@@ -13,6 +13,7 @@ header {
     position: sticky;
     z-index: 10;
     top: 0;
+    background-color: #242428;
 }
 
 .container1 {
@@ -297,6 +298,22 @@ header {
 .iframe-local-div {
     width: 600px;
     height: 350px;
+}
+.form {
+    color: rgb(19, 88, 134);
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(22, 22, 24);
+}
+
+.form-input {
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 15px;
 }
 
 @media all and (max-width: 1000px) {
