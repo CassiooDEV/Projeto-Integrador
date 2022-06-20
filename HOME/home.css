@@ -56,6 +56,9 @@ main {
     border: 1px solid #ccc;
     margin: 15px;
 }
+.section-cards{
+    height: 55rem;
+}
 
 .cards {
     display: grid;
@@ -126,12 +129,15 @@ main {
     .form{
         display: none;
     }
+    .section-cards{
+        height: 145rem;
+    }
 }
 
 @media all and (max-width: 800px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 100%;
+        grid-gap: 1rem;
     }
 
     .cards-body {
@@ -140,6 +146,10 @@ main {
         background-color: rgb(22, 22, 24);
         border-radius: 12px;
     }
+    .section-cards{
+        height: 130rem;
+    }
+
 }
 
 @media all and (max-width: 600px) {
@@ -155,4 +165,8 @@ main {
         border-radius: 12px;
         height: max-content;
     }
+    .section-cards{
+        height: 130rem;
+    }
+
 }
