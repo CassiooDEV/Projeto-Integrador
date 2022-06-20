@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: rgb(10, 10, 12);
+}
+
+#footer-container{
+    background-color: black;
+    display: flex;
+    width: 100%;
+}
+
+#footer-container p, #footer-container a{
+    color: #bbbbbb;
+    font-family: 'Montserrat';
+}
+
+.boxsFooter{
+    width: 30%;
+    padding: 2%;
+}
+
+.logoFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgLogoFooter{
+    max-width: 25%;
+}
+
+.pLogo{
+    margin: 0;
+    color: white !important;
+}
+
+.pLogo:nth-last-child(){
+    background-color: red;
+}
+
+#linksFooterDiv{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.linksFooter{
+    margin: 2% 0;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.linksFooter:hover{
+    color: #6db8ff !important;
+    text-decoration: underline;
+}
+
+.pBox1{
+    color: #bbbbbb;
+}
+
+#pCopyright{
+    font-size: 10px;
+}
+
+.iconsFooter{
+    max-width: 10%;
+}
+
+#box2Footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box2FooterDivs{
+    display: flex;
+}
+
+.box2FooterDivs img{
+    max-height: 70%;
+    margin-right: 2%;
+}
+
+.pBox2{
+    font-size: 13px;
+}
+
+#box3Footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#pBox3{
+    padding-bottom: 4%;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+}
+
+#iconYoutube{
+    max-width: 11%;
+}
+
+.iconsBox3:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+@media all and (max-width: 1023px){
+    #imgLogoFooter{
+        max-width: 20%;
+    }
+    #nomeLogo{
+        font-size: 14px;
+    }
+    #subtituloLogo{
+        font-size: 9px !important;;
+    }
+    #pCopyright{
+        font-size: 9px;
+    }
+    .iconsFooter{
+        max-width: 8%;
+    }
+    .pBox2{
+        margin-top: 0;
+        font-size: 11px;
+    }
+    #pBox3{
+        font-size: 14px;
+    }
+    #iconYoutube{
+        max-width: 9%;
+    }
+}
+
+@media all and (max-width: 850px){
+    #imgLogoFooter{
+        max-width: 17%;
+    }
+    #nomeLogo{
+        font-size: 13px;
+    }
+    #subtituloLogo{
+        font-size: 8px !important;
+    }
+    #pCopyright{
+        font-size: 7px;
+    }
+    .iconsFooter{
+        max-width: 8%;
+    }
+    .pBox2{
+        font-size: 9px;
+    }
+    #pBox3{
+        font-size: 12px;
+    }
+    #iconYoutube{
+        max-width: 8%;
+    }
+}
+
+@media all and (max-width: 650px){
+   #footer-container{
+    flex-direction: column;
+   }
+   .boxsFooter{
+    width: 96%;
+   }
+   #nomeLogo{
+    font-size: 18px;
+   }
+   #subtituloLogo{
+    font-size: 11px !important;
+   }
+   #linksFooterDiv{
+    flex-direction: column;
+    align-items: center;
+   }
+   .linksFooter{
+    font-size: 14px;
+    margin: .5%;
+   }
+   .box2FooterDivs{
+    justify-content: center;
+   }
+   .box2FooterDivs img{
+    max-height: 20px;
+    max-width: 20%;
+    align-self: center;
+    margin-right: 1%;
+   }
+   .pBox2{
+    margin-top: 3%;
+    font-size: 14px;
+   }
+   #box3Footer{
+    text-align: center;
+   }
+   #pBox3{
+    font-size: 15px;
+    border: none;
+    padding-bottom: 0;
+   }
+   .iconsBox3{
+    max-width: 7%;
+   }
+   #iconYoutube{
+    max-width: 7.5%;
+   }
+   #pCopyright{
+    border-top: 1px solid gray;
+    padding-top: 2%;
+    font-size: 10px;
+   }
+}
