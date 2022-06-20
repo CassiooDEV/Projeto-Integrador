@@ -25,13 +25,13 @@ main {
 }
 
 .pictures {
-    background-image: url(IMG/apartamento-de-luxo-itaim-bibi-1000x600.jpg);
+    background-image: url(../IMG/apartamento-de-luxo-itaim-bibi-1000x600.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .about {
-    background-image: url(IMG/0617_DEVSet_Banner_Site_02.jpg);
+    background-image: url(../IMG/0617_DEVSet_Banner_Site_02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
