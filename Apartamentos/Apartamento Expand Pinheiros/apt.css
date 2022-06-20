@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #242428;
+}
+
+.container1 {
+    background-color: #242428;
+}
+
+.section1 {
+    height: 70vh;
+    position: relative;
+    padding: 0 1%;
+}
+
+.imgSection1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+.boxImg {
+    background-color: #303030e5;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 380px;
+    height: 350px;
+    border-top: 5px solid #29c6ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.divInfoApt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconSec1Apt {
+    width: 15px;
+    height: 15px;
+}
+
+.nomeApt {
+    color: #29c6ed;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.estadoApt {
+    background-color: #29c6ed;
+    padding: 2% 0%;
+    width: 90%;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.localApt {
+    margin: 5%;
+    display: flex;
+    font-size: 17px;
+}
+
+.localApt .iconSec1Apt {
+    width: 20px;
+    height: 20px;
+    margin-right: 2%;
+}
+
+.divDescricaoApt {
+    width: 70%;
+}
+
+.descricaoApt {
+    margin: 5%;
+    display: flex;
+    font-size: 17px;
+}
+
+.descricaoApt .iconSec1Apt {
+    width: 20px;
+    height: 20px;
+    margin-right: 2%;
+}
+
+.localApt,
+.estadoApt {
+    text-align: center;
+}
+
+.localApt,
+.estadoApt,
+.descricaoApt {
+    color: #f5f5f5;
+}
+
+.localApt {
+    margin: 0;
+}
+
+.galeria-container {
+    text-align: center;
+    background-color: #1C1C1F;
+}
+
+.title-galeria {
+    margin-top: 0;
+    padding-top: 2%;
+    color: #29c6ed;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1%;
+    padding: 1% 2%;
+}
+
+.galeria-img {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    border: 3px solid #29c6ed;
+    border-radius: 5px;
+}
+
+.galeria-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.planta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+
+}
+
+.title-planta {
+    color: #f5f5f5;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.buttons-container {
+    margin-bottom: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-planta {
+    background-color: transparent;
+    border: none;
+    border-top: 5px solid #29c6ed;
+    color: #BBBBBB;
+    cursor: pointer;
+    background-color: #303030e5;
+    padding: 1% 3%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.buttons-planta:hover {
+    background-color: #5a5a5a;
+    transition: .3s;
+}
+
+#planta2,
+#planta3 {
+    display: none;
+}
+
+.divImgPlanta {
+    width: 600px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.divImgPlanta img {
+    width: 100%;
+    height: 100%;
+}
+
+.tour-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    background-color: #1C1C1F;
+}
+
+.tour-title {
+    color: #29c6ed;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.tour-descricao {
+    color: #BBBBBB;
+    font-size: 18px;
+}
+
+#buttonIniciarTour,
+#buttonEncerrarTour {
+    background-color: transparent;
+    border: none;
+    border-top: 5px solid #29c6ed;
+    color: #BBBBBB;
+    cursor: pointer;
+    background-color: #303030e5;
+    padding: 1% 3%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#buttonIniciarTour:hover,
+#buttonEncerrarTour:hover {
+    background-color: #5a5a5a;
+    transition: .3s;
+}
+
+#buttonEncerrarTour {
+    display: none;
+}
+
+#iframe-div {
+    width: 600px;
+    height: 350px;
+    display: none;
+    margin-top: 2%;
+}
+
+.lazer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    padding: 0 2%;
+}
+
+.title-lazer {
+    color: #f5f5f5;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.listaLazer {
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    color: #BBBBBB;
+    font-size: 16px;
+}
+
+.listaLazer li {
+    margin: 2% 0;
+}
+
+.localizacao-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C1C1F;
+    padding: 0 2% 2% 2%;
+}
+
+.title-localizacao {
+    color: #29c6ed;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.iframe-local-div {
+    width: 600px;
+    height: 350px;
+}
+
+@media all and (max-width: 1000px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .divImgPlanta {
+        height: 350px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .divImgPlanta {
+        width: 500px;
+        height: 300px;
+    }
+
+    #iframe-div {
+        width: 500px;
+        height: 300px;
+    }
+
+    .iframe-local-div {
+        width: 500px;
+        height: 300px;
+    }
+
+    .listaLazer {
+        grid-template-columns: 1fr;
+    }
+
+    .ul1 {
+        margin-bottom: 0;
+    }
+
+    .ultimoLi {
+        margin-bottom: 0 !important;
+        padding-bottom: 0;
+    }
+
+    .ul2 {
+        margin-top: 2%;
+    }
+
+    .primeiraLi {
+        margin-top: 0 !important;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .imgSection1 {
+        object-position: right;
+    }
+
+    .boxImg {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 330px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .galeria-img {
+        width: 80%;
+        height: 250px;
+        border: none;
+    }
+
+    .galeria-img4 {
+        margin-bottom: 10%;
+    }
+
+    .divImgPlanta {
+        width: 300px;
+        height: 220px;
+    }
+
+    #iframe-div {
+        width: 300px;
+        height: 220px;
+    }
+
+    .iframe-local-div {
+        width: 300px;
+        height: 220px;
+    }
+}
