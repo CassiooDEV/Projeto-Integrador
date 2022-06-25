@@ -1,0 +1,5 @@
+@media all and (max-width: 600px){
+    .imgSection1{
+        object-position: 65% !important;
+    }
+}
