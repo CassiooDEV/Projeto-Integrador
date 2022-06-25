@@ -24,6 +24,16 @@ main {
     min-width: 320px;
 }
 
+/* #botao-menu{
+    width: 20%;
+    display: none;
+}
+
+#botao-menu-fechar{
+    width: 20%;
+    display: none;
+} */
+
 .pictures {
     background-image: url(../IMG/apartamento-de-luxo-itaim-bibi-1000x600.jpg);
     background-repeat: no-repeat;
@@ -191,6 +201,7 @@ main {
 }
 
 @media all and (max-width: 600px) {
+
     .cards {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;

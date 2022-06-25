@@ -44,3 +44,29 @@ function verifState() {
         vState = true;
     }
 }
+
+// var botaoMenu = document.getElementById('botao-menu');
+// var botaoMenuFechar = document.getElementById('botao-menu-fechar')
+// var menu = document.getElementById('menu-nav');
+
+// botaoMenu.addEventListener('click', mostraMenu);
+// botaoMenuFechar.addEventListener('click', fechaMenu)
+
+// function mostraMenu(){
+//     if (window.matchMedia("(max-width:600px)").matches) {
+//         menu.style.display = 'block';
+//         botaoMenu.style.display = 'none'
+//         botaoMenuFechar.style.display = 'block'
+//       }
+// }
+
+// function fechaMenu(){
+//     if (window.matchMedia("(max-width:600px)").matches) {
+//         menu.style.display = 'none';
+//         botaoMenu.style.display = 'block'
+//         botaoMenuFechar.style.display = 'none'
+//     }
+// }
+
+
+
