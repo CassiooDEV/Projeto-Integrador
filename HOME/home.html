@@ -20,11 +20,13 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/Projeto-Integrador/HOME/home.html"><img class=""
+                <!-- <img class="float-end nav-link" id="botao-menu" src="../IMG/menu.webp" alt="">
+                <img class="float-end nav-link" id="botao-menu-fechar" src="../IMG/fecharMenu.png" alt=""> -->
+                <a class="navbar-brand" id="logo" href="/Projeto-Integrador/HOME/home.html"><img class=""
                         src="../IMG/logowtext.png" width="20%">
                 </a>
                 <div class="navbar-scroll text-white" id="navbarSupportedContent">
-                    <ul class="nav nav-tabs justify-content-center me-auto, mb-2, mb-lg-0, me-2">
+                    <ul class="nav nav-tabs justify-content-center me-auto, mb-2, mb-lg-0, me-2" id="menu-nav">
                         <li class="nav-item">
                             <a class="nav-link text-white" aria-current="page" href="#">A DEVSet</a>
                         </li>
@@ -180,10 +182,9 @@
         <section class="about px-5" style="height: 90vh;margin-top: 20px;position: relative;">
             <div class="container">
                 <ul class="text-info">
-                    <div class="card float-end"
-                        style="width: 25rem;height: 75%;position: absolute;right: 12%; background-color: rgba(10, 10, 12, 0.911);border-top: 10px solid rgb(19, 88, 134);display: flex;flex-direction: column;justify-content: center">
-                        <div class="card-body" style="text-align: center;">
-                            <img src="../IMG/logo.png" class="card-img-top" style="width:50%;" alt="...">
+                    <div class="card float-end card-about">
+                        <div class="card-body">
+                            <img src="../IMG/logo.png" class="card-img-top" id="img-about" alt="...">
                             <h2 class="card-title"
                                 style="text-align: center; margin-bottom: 30px;border-bottom: 2px white;">Sobre a DEVSet
                             </h2>
@@ -197,7 +198,6 @@
                                 experiência ao cliente, reunindo tanto funcionalidade quanto sofisticação em todos os
                                 projetos.</p>
                             <br>
-                            <a href="#" class="btn btn-primary text-white" style="width: 100%;">Saiba Mais</a>
                         </div>
                 </ul>
             </div>
@@ -265,7 +265,7 @@
                 </div>
             </div>
         </section>
-        <section class="form" style="height: 30vh;">
+        <section class="form">
             <div class="container">
                 <h3 class="text-white" style="text-align: center; font-weight: bold;">Assine nossa newsletter e receba
                     todas

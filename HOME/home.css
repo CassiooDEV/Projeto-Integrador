@@ -24,6 +24,16 @@ main {
     min-width: 320px;
 }
 
+/* #botao-menu{
+    width: 20%;
+    display: none;
+}
+
+#botao-menu-fechar{
+    width: 20%;
+    display: none;
+} */
+
 .pictures {
     background-image: url(../IMG/apartamento-de-luxo-itaim-bibi-1000x600.jpg);
     background-repeat: no-repeat;
@@ -46,6 +56,7 @@ main {
     text-align: center;
     width: 100%;
     background-color: rgb(22, 22, 24);
+    height: 30vh;
 }
 
 .form-input {
@@ -56,7 +67,8 @@ main {
     border: 1px solid #ccc;
     margin: 15px;
 }
-.section-cards{
+
+.section-cards {
     height: 55rem;
 }
 
@@ -82,7 +94,6 @@ main {
     font-weight: 600;
     color: white;
     background-color: rgba(0, 0, 0, 0.712);
-    border-radius: 5px;
     width: 45%;
     border-top: 7px solid rgb(19, 88, 134);
 }
@@ -98,23 +109,44 @@ main {
     padding: 25px;
 }
 
-.icons-apt{
+.icons-apt {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
     border-radius: 5px;
 }
-.icons-apt img{
+
+.icons-apt img {
     width: 25px;
     height: 25px;
     margin: 5px;
 }
 
+.card-about {
+    text-align: center !important;
+    height: max-content !important;
+    width: 25rem !important;
+    height: max-content !important;
+    position: absolute !important;
+    right: 12% !important;
+    background-color: rgba(10, 10, 12, 0.911) !important;
+    border-top: 10px solid rgb(19, 88, 134) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+}
+#img-about{
+    width: 50% !important;
+}
+
+
 @media all and (max-width: 1000px) {
-    .container{
+    .container {
         justify-content: center;
     }
+
     .cards {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
@@ -126,38 +158,64 @@ main {
         background-color: rgb(22, 22, 24);
         border-radius: 12px;
     }
-    .form{
-        display: none;
-    }
-    .section-cards{
+
+    .section-cards {
         height: 145rem;
     }
+
 }
 
 @media all and (max-width: 800px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
+        width: 100%;
+    }
+    .card-about{
+        height: 90% !important;
+    }
+    #img-about{
+        max-width: 25% !important;
+    }
+    .card-about p{
+        text-align: center !important;
     }
 
     .cards-body {
         width: 100%;
-        height: max-content;
         background-color: rgb(22, 22, 24);
         border-radius: 12px;
-    }
-    .section-cards{
-        height: 130rem;
+        height: max-content;
     }
 
+    .form {
+        display: none;
+    }
+    #logo{
+        text-align: center;
+    }
+
+    .section-cards {
+        height: 130rem;
+    }
 }
 
 @media all and (max-width: 600px) {
+
     .cards {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
         width: 100%;
     }
+    .card-about{
+        height: 90% !important;
+    }
+    #img-about{
+        max-width: 25% !important;
+    }
+    .card-about p{
+        text-align: center !important;
+    }
 
     .cards-body {
         width: 100%;
@@ -165,7 +223,15 @@ main {
         border-radius: 12px;
         height: max-content;
     }
-    .section-cards{
+
+    .form {
+        display: none;
+    }
+    #logo{
+        text-align: center;
+    }
+
+    .section-cards {
         height: 130rem;
     }
 
