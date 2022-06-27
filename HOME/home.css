@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #242428;
+}
+
+main {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    flex-direction: column;
+    color: white;
+    margin: auto;
+    max-width: 1920px;
+    min-width: 320px;
+}
+
+/* #botao-menu{
+    width: 20%;
+    display: none;
+}
+
+#botao-menu-fechar{
+    width: 20%;
+    display: none;
+} */
+
+.pictures {
+    background-image: url(../IMG/apartamento-de-luxo-itaim-bibi-1000x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    background-image: url(../IMG/0617_DEVSet_Banner_Site_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 50px;
+    max-width: 1920px;
+    min-width: 320px;
+}
+
+.form {
+    color: rgb(19, 88, 134);
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(22, 22, 24);
+    height: 30vh;
+}
+
+.form-input {
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 15px;
+}
+
+.section-cards {
+    height: 55rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+    padding-bottom: 40px;
+    width: 100%;
+    max-width: 800px;
+    min-width: 320px;
+}
+
+.cards-body {
+    width: 25rem;
+    height: 40rem;
+    background-color: rgb(22, 22, 24);
+    border-radius: 12px;
+}
+
+.caption {
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 45%;
+    border-top: 7px solid rgb(19, 88, 134);
+}
+
+.caption h2 {
+    color: rgb(19, 88, 134);
+    font-weight: bold;
+}
+
+.btn-carousel {
+    border: 5px solid rgb(10, 10, 12);
+    border-radius: 80px;
+    padding: 25px;
+}
+
+.icons-apt {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+.icons-apt img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.card-about {
+    text-align: center !important;
+    height: max-content !important;
+    width: 25rem !important;
+    height: max-content !important;
+    position: absolute !important;
+    right: 12% !important;
+    background-color: rgba(10, 10, 12, 0.911) !important;
+    border-top: 10px solid rgb(19, 88, 134) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+}
+#img-about{
+    width: 50% !important;
+}
+
+
+@media all and (max-width: 1000px) {
+    .container {
+        justify-content: center;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .cards-body {
+        width: 100%;
+        height: max-content;
+        background-color: rgb(22, 22, 24);
+        border-radius: 12px;
+    }
+
+    .section-cards {
+        height: 145rem;
+    }
+
+}
+
+@media all and (max-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+    }
+    .card-about{
+        height: 90% !important;
+    }
+    #img-about{
+        max-width: 25% !important;
+    }
+    .card-about p{
+        text-align: center !important;
+    }
+
+    .cards-body {
+        width: 100%;
+        background-color: rgb(22, 22, 24);
+        border-radius: 12px;
+        height: max-content;
+    }
+
+    .form {
+        display: none;
+    }
+    #logo{
+        text-align: center;
+    }
+
+    .section-cards {
+        height: 130rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        width: 100%;
+    }
+    .card-about{
+        height: 60% !important;
+        left: 5%;
+    }
+    #img-about{
+        max-width: 25% !important;
+    }
+    .card-about p{
+        text-align: center !important;
+    }
+
+    .cards-body {
+        width: 100%;
+        background-color: rgb(22, 22, 24);
+        border-radius: 12px;
+        height: max-content;
+    }
+
+    .form {
+        display: none;
+    }
+    #logo{
+        text-align: center;
+    }
+
+    .section-cards {
+        height: 130rem;
+    }
+
+}
