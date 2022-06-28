@@ -257,7 +257,7 @@ main {
         top: 70px;
         right: 0;
         height: 0;
-        background: #e7e7e7;
+        background: #242428;
         transition: .4s;
         z-index: 1000;
         visibility: hidden;
@@ -274,8 +274,8 @@ main {
         padding: 1rem 0;
         margin: 20px 1rem;
         text-align: center;
-        font-size: 1.2rem;
-        border-bottom: 2px solid #d9d9d9;
+        font-size: 1rem;
+        border-bottom: 2px solid rgb(19, 88, 134);
         padding: 20px;
     }
 

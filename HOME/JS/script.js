@@ -44,44 +44,21 @@ function verifState() {
         vState = true;
     }
 }
-
-// var botaoMenu = document.getElementById('botao-menu');
-// var botaoMenuFechar = document.getElementById('botao-menu-fechar')
-// var menu = document.getElementById('menu-nav');
-
-// botaoMenu.addEventListener('click', mostraMenu);
-// botaoMenuFechar.addEventListener('click', fechaMenu)
-
-// function mostraMenu(){
-//     if (window.matchMedia("(max-width:600px)").matches) {
-//         menu.style.display = 'block';
-//         botaoMenu.style.display = 'none'
-//         botaoMenuFechar.style.display = 'block'
-//       }
-// }
-
-// function fechaMenu(){
-//     if (window.matchMedia("(max-width:600px)").matches) {
-//         menu.style.display = 'none';
-//         botaoMenu.style.display = 'block'
-//         botaoMenuFechar.style.display = 'none'
-//     }
-// }
+// HEADER
 
 const botao = document.getElementById('b');
 
 function toggleMenu() {
     const nav = document.getElementById('nav');
-    nav.classList.toggle('active')
+    nav.classList.toggle('active');
 }
 
 btn.addEventListener('click', toggleMenu);
 
-function ChangeBG(){
-    document.getElementById('btn').classList.contains("alt") ? document.getElementById('btn').classList.remove("alt") : document.getElementById('btn').classList.add("alt");
+function ChangeBG() {
+    document.getElementById('btn').classList.contains('alt')
+        ? document.getElementById('btn').classList.remove('alt')
+        : document.getElementById('btn').classList.add('alt');
 }
 
-
 // Fim do header
-
-
