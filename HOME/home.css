@@ -24,16 +24,6 @@ main {
     min-width: 320px;
 }
 
-/* #botao-menu{
-    width: 20%;
-    display: none;
-}
-
-#botao-menu-fechar{
-    width: 20%;
-    display: none;
-} */
-
 .pictures {
     background-image: url(../IMG/apartamento-de-luxo-itaim-bibi-1000x600.jpg);
     background-repeat: no-repeat;
@@ -56,7 +46,7 @@ main {
     text-align: center;
     width: 100%;
     background-color: rgb(22, 22, 24);
-    height: 30vh;
+    height: 40vh;
 }
 
 .form-input {
@@ -70,24 +60,35 @@ main {
 
 .section-cards {
     height: 55rem;
+    width: 100%;
 }
 
 .cards {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    justify-items: center;
+    grid-gap: 1rem;
     padding-bottom: 40px;
     width: 100%;
     max-width: 800px;
     min-width: 320px;
+    margin: 0 !important;
+    padding:  0 !important; */
+    display: flex;
+    height: 100%;
+    align-items: stretch;
 }
 
 .cards-body {
-    width: 25rem;
-    height: 40rem;
+    width: 100%;
     background-color: rgb(22, 22, 24);
-    border-radius: 12px;
+    margin: 0 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards-body p{
+    color: #ebebeb;
 }
 
 .caption {
@@ -95,12 +96,12 @@ main {
     color: white;
     background-color: rgba(0, 0, 0, 0.712);
     width: 45%;
-    border-top: 7px solid rgb(19, 88, 134);
+    border-top: 5px solid #29c6ed;
 }
 
 .caption h2 {
-    color: rgb(19, 88, 134);
-    font-weight: bold;
+    color: #29c6ed;
+    font-weight: 300;
 }
 
 .btn-carousel {
@@ -131,7 +132,7 @@ main {
     position: absolute !important;
     right: 12% !important;
     background-color: rgba(10, 10, 12, 0.911) !important;
-    border-top: 10px solid rgb(19, 88, 134) !important;
+    border-top: 5px solid #29c6ed !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
@@ -141,15 +142,35 @@ main {
     width: 50% !important;
 }
 
+body::-webkit-scrollbar-thumb{
+    background-color: #29c6ed;
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #242428;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+#menu-nav::-webkit-scrollbar-thumb, #menu-nav::-webkit-scrollbar, #menu-nav::-webkit-scrollbar-track{
+    display: none;
+}
+
 
 @media all and (max-width: 1000px) {
     .container {
         justify-content: center;
     }
-
+    .card-about{
+        height: 90% !important;
+    }
+    #img-about{
+        max-width: 25% !important;
+    }
     .cards {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
+        flex-direction: column;
     }
 
     .cards-body {
@@ -209,9 +230,18 @@ main {
         grid-gap: 1rem;
         width: 100%;
     }
+    .about{
+        background-position: center;
+    }
     .card-about{
-        height: 60% !important;
-        left: 5%;
+        height: 90% !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        margin: 2% auto !important;
+        background-color: rgba(0, 0, 0, 0.521)!important;
+        border-radius: 0 !important;
     }
     #img-about{
         max-width: 25% !important;
@@ -254,7 +284,7 @@ main {
         display: block;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 130px;
         right: 0;
         height: 0;
         background: #242428;
@@ -266,6 +296,7 @@ main {
 
     #nav.active #menu-nav {
         height: 50vh;
+        width: 100%;
         visibility: visible;
         overflow-y: auto;
     }
@@ -275,7 +306,7 @@ main {
         margin: 20px 1rem;
         text-align: center;
         font-size: 1rem;
-        border-bottom: 2px solid rgb(19, 88, 134);
+        border-bottom: 2px solid #29c6ed;
         padding: 20px;
     }
 
