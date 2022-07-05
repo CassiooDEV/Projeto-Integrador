@@ -205,6 +205,9 @@ body {
         cursor: pointer;
         display: block;
         padding: 20px;
+        position: absolute;
+        top: 15%;
+        right: 2%;
     }
 
     #btn.alt {

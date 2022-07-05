@@ -320,7 +320,10 @@ body::-webkit-scrollbar{
         cursor: pointer;
         display: block;
         padding: 20px;
-    }
+        position: absolute;
+        top: 15%;
+        right: 2%;
+        }
 
     #btn.alt {
         transition: 0.1s;
