@@ -74,7 +74,7 @@ body {
 .title-div {
     position: absolute;
     bottom: 0;
-    width: 96%;
+    width: 100%;
     text-align: center;
     background-color: #252525cc;
     padding: 2%;
@@ -115,6 +115,7 @@ body {
 
 .button-apt:hover {
     background-color: #5a5a5a;
+    color: #BBBBBB;
     transition: .3s;
 }
 
