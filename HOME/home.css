@@ -279,7 +279,7 @@ body::-webkit-scrollbar{
         display: block;
         position: absolute;
         width: 100%;
-        top: 130px;
+        top: 100%;
         right: 0;
         height: 0;
         background: #242428;
