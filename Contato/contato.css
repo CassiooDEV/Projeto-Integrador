@@ -15,14 +15,14 @@ header {
     top: 0;
     background-color: #1e1e20;
 }
-.H1-portal {
+.H1-contato {
    
     color: #29c6ed;
     font-weight: 500;
     letter-spacing: -1px;
     text-align: center;
 }
-#container-portal {
+#container-contato {
     padding: 4%;
     background-color: #242428;
     text-align: center;
@@ -34,7 +34,7 @@ header {
     width: 50%;
     margin: 0 auto;
 }
-#container-corretor {
+#container-box {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@ header {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    height: 250px;
+    height: 400px;
     width: 250px;
     box-shadow: 0px 0px 3px  #121212;
     transition: .3s;
@@ -61,10 +61,13 @@ header {
     max-width: 40%;
 
 }
-.box-corretor p {
-color: #0874B3;
+.box-corretor h2 {
+color: #29c6ed;
 font-size: 20px !important;
 
+}
+.box-corretor p {
+    color: gray;
 }
 .box-corretor button {
     color: #0874B3;
@@ -187,13 +190,14 @@ font-size: 20px !important;
     filter: brightness(120%);
     cursor: pointer;
 }
-
-.modal{
+.formulario {
     position: absolute;
-    top: 10%;
-    background-color: white;
+    top: 15%;
+    background-color: white ;
     width: 80%;
     height: 1000px;
+    color: white;
+    display: none 
 }
 
 @media all and (max-width: 1023px){
@@ -232,12 +236,13 @@ font-size: 20px !important;
     .P-numero {
         font-size: 50px;
     }
-    #container-corretor {
+
+    #container-box {
         flex-direction: column;
-        align-items: center;
+        align-items: center;    
     }
-    .P-portal {
-        width: 100%;
+    .box-corretor {
+        width: 90%;
     }
 }
 
