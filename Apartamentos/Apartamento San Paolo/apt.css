@@ -302,6 +302,20 @@ header {
     width: 600px;
     height: 350px;
 }
+.form{
+    text-align: center;
+    padding-top: 4%;
+    background-color: #1C1C1F;
+    height: 30vh;
+}
+.form-input {
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 15px;
+}
 
 @media all and (max-width: 1000px) {
     .galeria {
@@ -310,6 +324,12 @@ header {
 
     .divImgPlanta {
         height: 350px;
+    }
+    .form{
+        height: 40vh;
+    }
+    .form-input {
+        width: 35%;
     }
 }
 
@@ -349,6 +369,12 @@ header {
     .primeiraLi {
         margin-top: 0 !important;
     }
+    .form{
+        height: 40vh;
+    }
+    .form-input {
+        width: 35%;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -363,6 +389,18 @@ header {
         bottom: 0;
         margin: auto;
         width: 330px;
+    }
+    .form{
+        height: 60vh;
+    }
+
+    .form-input {
+        width: 60%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin: 15px;
     }
 
     .galeria {

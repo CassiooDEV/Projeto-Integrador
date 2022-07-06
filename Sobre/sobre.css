@@ -287,6 +287,9 @@ header {
     padding-top: 2%;
     font-size: 10px;
    }
+   #logo{
+    text-align: center;
+   }
 }
 #btn {
     display: none;
@@ -336,7 +339,10 @@ header {
         cursor: pointer;
         display: block;
         padding: 20px;
-    }
+        position: absolute;
+        top: 15%;
+        right: 2%;
+        }
 
     #btn.alt {
         transition: 0.1s;
