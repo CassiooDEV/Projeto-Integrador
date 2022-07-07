@@ -190,14 +190,55 @@ font-size: 20px !important;
     filter: brightness(120%);
     cursor: pointer;
 }
-.formulario {
+#formulario {
+    position: fixed;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    width: 60%;
+    height: 600px;
+    color: white; 
+    border-radius: 10px;
+    z-index: 15;  
+}
+.mostrar {
+    display: none;
+}
+#fecharform {
     position: absolute;
-    top: 15%;
-    background-color: white ;
-    width: 80%;
-    height: 1000px;
-    color: white;
-    display: none 
+    top: 3%;
+    right: 3%;
+}
+.formcontainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.formcontainer input {
+    width: 90%;
+    height: 50px;
+    border: 1px solid gray;
+    margin-top: 2%;
+}
+.formcontainer textarea {
+    margin-top: 2%;
+}
+.buttonjanela {
+    width: 20%;
+    height: 35px;
+    background-color: #29c6ed;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+  
+   
 }
 
 @media all and (max-width: 1023px){
