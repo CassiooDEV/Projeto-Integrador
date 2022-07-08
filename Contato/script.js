@@ -1,3 +1,4 @@
+let enviar = document.getElementById('enviar');
 let fecharform = document.getElementById('fecharform');
 let mostrar = document.getElementsByClassName('mostrar');
 let formulario = document.getElementById('formulario');
@@ -9,3 +10,6 @@ fecharform.addEventListener('click', mostraformulario)
 function mostraformulario(){
    formulario.classList.toggle("mostrar")
 }
+enviar.addEventListener('click', () => {
+    alert('Enviado com sucesso!')
+})

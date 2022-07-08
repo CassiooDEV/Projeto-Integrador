@@ -69,7 +69,7 @@ font-size: 20px !important;
 .box-corretor p {
     color: gray;
 }
-.box-corretor button {
+.box-corretor button, .botaoForm {
     color: #0874B3;
     border: 2px solid #0874B3;
     border-radius: 5px;
@@ -78,7 +78,7 @@ font-size: 20px !important;
     height: 40px;
     
 }
-.box-corretor button:hover {
+.box-corretor button:hover, .botaoForm:hover {
     background-color: #0874B3;
     color: #242428;
 }
@@ -211,6 +211,12 @@ font-size: 20px !important;
     position: absolute;
     top: 3%;
     right: 3%;
+    width: 6%;
+    height: 30px;
+    background-color: rgb(134, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 .formcontainer {
     height: 100%;
@@ -230,18 +236,15 @@ font-size: 20px !important;
 .formcontainer textarea {
     margin-top: 2%;
 }
-.buttonjanela {
-    width: 20%;
-    height: 35px;
-    background-color: #29c6ed;
-    color: black;
-    border-radius: 5px;
-    border: 1px solid black;
-  
-   
-}
 
 @media all and (max-width: 1023px){
+    #formulario {
+        width: 90%;
+        height: 500px;
+    }
+    textarea {
+        display: none;
+    }
     #imgLogoFooter{
         max-width: 20%;
     }
@@ -288,6 +291,13 @@ font-size: 20px !important;
 }
 
 @media all and (max-width: 850px){
+    #formulario {
+        width: 90%;
+        height: 500px;
+    }
+    textarea {
+        display: none;
+    }
     #imgLogoFooter{
         max-width: 17%;
     }
