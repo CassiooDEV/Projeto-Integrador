@@ -8,28 +8,33 @@ let mostrar = document.getElementsByClassName('mostrar');
 let cadastro = document.getElementById('cadastro');
 let formulario = document.getElementById('formulario');
 let buttons = document.getElementsByClassName('botaoForm');
+let input = document.getElementsByTagName('input');
 
 fecharform.addEventListener('click', mostraformulario);
 fecharformcadastro.addEventListener('click', mostracadastro);
 
-function mostraformulario(){
-   formulario.classList.toggle("mostrar");
+function mostraformulario() {
+    formulario.classList.toggle('mostrar');
 }
-function mostracadastro(){
-   cadastro.classList.toggle("mostrar");
+function mostracadastro() {
+    cadastro.classList.toggle('mostrar');
 }
 
 botao1.addEventListener('click', mostraformulario);
 botao2.addEventListener('click', mostracadastro);
 
 enviar.addEventListener('click', () => {
-    mostraformulario()
-    alert('Logado com sucesso!')
-    
-})
+    mostraformulario();
+    Array.from(input).forEach((input) => {
+        input.value = '';
+    });
+    alert('Logado com sucesso!');
+});
 
 enviarcadastro.addEventListener('click', () => {
-    mostracadastro()
-    alert('Cadastrado com sucesso!')
-    
-})
+    mostracadastro();
+    Array.from(input).forEach((input) => {
+        input.value = '';
+    });
+    alert('Cadastrado com sucesso!');
+});
