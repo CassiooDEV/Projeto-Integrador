@@ -16,24 +16,24 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../../HOME/home.html"><img class=""
-                        src="../../IMG/logowtext.png" width="20%">
+                <button onclick="toggleMenu();ChangeBG()" id="btn"></button>
+                <a class="navbar-brand" id="logo" href="../../HOME/home.html"><img class="" src="../../IMG/logowtext.png" width="20%">
                 </a>
                 <div class="navbar-scroll text-white" id="navbarSupportedContent">
-                    <ul class="nav nav-tabs justify-content-center me-auto, mb-2, mb-lg-0, me-2">
+                    <ul class="nav nav-tabs justify-content-center" id="menu-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#">A DEVSet</a>
+                            <a class="nav-link text-white" aria-current="page" href="../../Sobre/sobre.html">A DEVSet</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black active" aria-current="page" href="../../imoveis/index.html">Imóveis</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link text-white" href="#">Contato</a>
+                            <a class="nav-link text-white" href="../../Contato/contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Portal do Corretor</a>
+                            <a class="nav-link text-white" href="../../Portal/portal.html">Portal do Corretor</a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
     <div class="container1">
         <section class="section1">
             <img class="imgSection1" src="../../imgs/apt/galeria/Fachada-da-Cidade1920x1080.jpg" alt="">
-            <div class="boxImg" style="height: 400px;">
+            <div class="boxImg">
                 <div class="divInfoApt">
                     <h2 class="nomeApt">Platinum Tower Ibirapuera</h2>
                     <p class="localApt"><img src="../../imgs/icons/iconLocal2.png" class="iconSec1Apt"
@@ -75,25 +75,6 @@
                 </div>
             </div>
         </section>
-        <section class="form" style="height: 30vh;">
-            <div class="container">
-                <h3 class="text-white" style="text-align: center; font-weight: bold;">Preencha o campo para receber
-                    todas as informações sobre esse imovel.</h3>
-                <form action="#">
-                    <input type="text" class="form-input" placeholder="Nome Completo" id="name" required>
-                    <input type="text" class="form-input" placeholder="Digite seu E-Mail" id="email" required>
-                    <input type="text" class="form-input" placeholder="Telefone" id="phone" required>
-                    <input type="text" class="form-input" placeholder="Você é um robo? Digite Não" id="bot" required>
-                    <br>
-                    <button class="btn btn-primary text-white"
-                        style="width: 20%;margin:10px;border-radius: 12px;font-size: large;min-width: 320px;"
-                        id="btn-form">ENVIAR</button>
-                    <ul type='none' id="users" style="margin-top: 10px;">
-                        <li id="complete" class="text-white"></li>
-                    </ul>
-                </form>
-            </div>
-        </section>
         <section class="lazer-container">
             <h2 class="title-lazer">Diferenciais</h2>
             <div class="listaLazer">
@@ -120,10 +101,9 @@
         <footer id="footer-container">
             <div class="boxsFooter" id="box1Footer">
                 <div class="logoFooter">
-                    <img id="imgLogoFooter" src="../../imgs/logo.png" alt="">
+                    <img id="imgLogoFooter" src="../../footer/imgs/logo.png" alt="">
                     <p class="pLogo pBox1" id="nomeLogo">DevSet</p>
-                    <p class="pLogo pBox1" id="subtituloLogo" style="font-size: 11px">Construtora e
-                        Incorporadora</p>
+                    <p class="pLogo pBox1" id="subtituloLogo" style="font-size: 11px">Construtora e Incorporadora</p>
                 </div>
                 <div id="linksFooterDiv">
                     <a href="#" class="linksFooter">Home</a>
@@ -137,26 +117,27 @@
             </div>
             <div class="boxsFooter" id="box2Footer">
                 <div id="localFooter" class="box2FooterDivs">
-                    <img class="iconsFooter" src="../../imgs/icons/iconLocal.png" alt="">
+                    <img class="iconsFooter" src="../../footer/imgs/icons/iconLocal.png" alt="">
                     <p class="pBox2">Avenida Paulista, 1500, São Paulo, Brasil</p>
                 </div>
                 <div id="telefoneFooter" class="box2FooterDivs">
-                    <img class="iconsFooter" src="../../imgs/icons/iconTelefone.png" alt="">
+                    <img class="iconsFooter" src="../../footer/imgs/icons/iconTelefone.png" alt="">
                     <p class="pBox2">(11)4002-8922</p>
                 </div>
                 <div id="emailFooter" class="box2FooterDivs">
-                    <img class="iconsFooter" src="../../imgs/icons/iconEmail.png" alt="">
+                    <img class="iconsFooter" src="../../footer/imgs/icons/iconEmail.png" alt="">
                     <p class="pBox2"> devset@gmail.com</p>
                 </div>
             </div>
             <div class="boxsFooter" id="box3Footer">
                 <div>
                     <p id="pBox3">Siga a DevSet</p>
-                    <img class="iconsFooter iconsBox3" src="../../footer/imgs/icons/iconFace.png" alt="">
-                    <img class="iconsFooter iconsBox3" src="../../footer/imgs/icons/iconInsta.png" alt="">
-                    <img class="iconsFooter iconsBox3" id="iconYoutube" src="../../footer/imgs/icons/iconYoutube.png"
-                        alt="">
-                    <img class="iconsFooter iconsBox3" src="../../footer/imgs/icons/iconLinkedin.png" alt="">
+                    <div class="iconesDiv">
+                        <div class="iconesFooter iconeYoutube"></div>
+                        <div class="iconesFooter iconeFace"></div>
+                        <div class="iconesFooter iconeInsta"></div>
+                        <div class="iconesFooter iconeLinkedin"></div>
+                    </div>
                 </div>
                 <div id="copyright">
                     <p class="pBox1" id="pCopyright">
@@ -170,7 +151,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="../Apartamento San Paolo/JS/script.js"></script>
+    <script src="../../HOME/JS/script.js"></script>
     <script src="JS/script.js"></script>
 </body>
 

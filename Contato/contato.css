@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #1e1e20;
+}
+
+.H1-contato {
+
+    color: #29c6ed;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+#container-contato {
+    padding: 4%;
+    background-color: #242428;
+    text-align: center;
+
+}
+
+.P-portal {
+    color: #888888;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#container-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.box-corretor {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 250px;
+    box-shadow: 0px 0px 3px #121212;
+    transition: .3s;
+    margin: 20px;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.box-corretor:hover {
+    box-shadow: 0px 0px 20px #121212;
+    transform: scale(110%);
+    transition: .3s;
+}
+
+.box-corretor img {
+    max-width: 40%;
+
+}
+
+.box-corretor h2 {
+    color: #29c6ed;
+    font-size: 20px !important;
+
+}
+
+.box-corretor p {
+    color: gray;
+}
+
+.box-corretor button,
+.botaoForm {
+    color: #0874B3;
+    border: 2px solid #0874B3;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 80%;
+    height: 40px;
+
+}
+
+.box-corretor button:hover,
+.botaoForm:hover {
+    background-color: #0874B3;
+    color: #242428;
+}
+
+
+#formulario {
+    position: fixed;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    width: 60%;
+    height: 600px;
+    color: white;
+    border-radius: 10px;
+    z-index: 15;
+}
+
+.mostrar {
+    display: none;
+}
+
+#fecharform {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 6%;
+    height: 30px;
+    background-color: rgb(134, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.formcontainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formcontainer input {
+    width: 90%;
+    height: 50px;
+    border: 1px solid gray;
+    margin-top: 2%;
+}
+
+.formcontainer textarea {
+    margin-top: 2%;
+}
+
+@media all and (max-width: 1023px) {
+    #formulario {
+        width: 90%;
+        height: 500px;
+    }
+
+    textarea {
+        display: none;
+    }
+
+    #imgLogoFooter {
+        max-width: 20%;
+    }
+
+    #nomeLogo {
+        font-size: 14px;
+    }
+
+    #subtituloLogo {
+        font-size: 9px !important;
+        ;
+    }
+
+    #pCopyright {
+        font-size: 9px;
+    }
+
+    .iconsFooter {
+        max-width: 8%;
+    }
+
+    .pBox2 {
+        margin-top: 0;
+        font-size: 11px;
+    }
+
+    #pBox3 {
+        font-size: 14px;
+    }
+
+    #iconYoutube {
+        max-width: 9%;
+    }
+
+    #numeros-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .numeros-div {
+        margin: 5% 0;
+    }
+
+    .P-numero {
+        font-size: 50px;
+    }
+
+    #container-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-corretor {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 850px) {
+    #formulario {
+        width: 90%;
+        height: 500px;
+    }
+
+    textarea {
+        display: none;
+    }
+
+    #imgLogoFooter {
+        max-width: 17%;
+    }
+
+    #nomeLogo {
+        font-size: 13px;
+    }
+
+    #subtituloLogo {
+        font-size: 8px !important;
+    }
+
+    #pCopyright {
+        font-size: 7px;
+    }
+
+    .iconsFooter {
+        max-width: 8%;
+    }
+
+    .pBox2 {
+        font-size: 9px;
+    }
+
+    #pBox3 {
+        font-size: 12px;
+    }
+
+    #iconYoutube {
+        max-width: 8%;
+    }
+}
+
+@media all and (max-width: 650px) {
+    #footer-container {
+        flex-direction: column;
+    }
+
+    .boxsFooter {
+        width: 96%;
+    }
+
+    #nomeLogo {
+        font-size: 18px;
+    }
+
+    #subtituloLogo {
+        font-size: 11px !important;
+    }
+
+    #linksFooterDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linksFooter {
+        font-size: 14px;
+        margin: .5%;
+    }
+
+    .box2FooterDivs {
+        justify-content: center;
+    }
+
+    .box2FooterDivs img {
+        max-height: 20px;
+        max-width: 20%;
+        align-self: center;
+        margin-right: 1%;
+    }
+
+    .pBox2 {
+        margin-top: 3%;
+        font-size: 14px;
+    }
+
+    #box3Footer {
+        text-align: center;
+    }
+
+    #pBox3 {
+        font-size: 15px;
+        border: none;
+        padding-bottom: 0;
+    }
+
+    .iconsBox3 {
+        max-width: 7%;
+    }
+
+    #iconYoutube {
+        max-width: 7.5%;
+    }
+
+    #pCopyright {
+        border-top: 1px solid gray;
+        padding-top: 2%;
+        font-size: 10px;
+    }
+}
+/*Menu do kauanty*/
+
+#btn {
+    display: none;
+}
+
+    /* Fim da header */
+
+
+    /* Responsividade */
+@media (max-width: 600px) {
+    #menu-nav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        height: 0;
+        background: #242428;
+        transition: .4s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu-nav {
+        height: 50vh;
+        width: 100%;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu-nav a {
+        padding: 1rem 0;
+        margin: 20px 1rem;
+        text-align: center;
+        font-size: 1rem;
+        border-bottom: 2px solid #29c6ed;
+        padding: 20px;
+    }
+
+    #btn {
+        transition: 0.2s;
+        padding: 13px;
+        background-color: transparent;
+        background-image: url(../imgs/icons/menu.png);
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        display: block;
+        padding: 20px;
+        position: absolute;
+        top: 15%;
+        right: 2%;
+        }
+
+    #btn.alt {
+        transition: 0.1s;
+        background-image: url(../imgs/icons/close.png);
+        background-color: transparent;
+    }
+
+}

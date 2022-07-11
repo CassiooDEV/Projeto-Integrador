@@ -18,26 +18,25 @@
 
 <body style="background-color: #242428">
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="nav">
             <div class="container-fluid">
-                <!-- <img class="float-end nav-link" id="botao-menu" src="../IMG/menu.webp" alt="">
-                <img class="float-end nav-link" id="botao-menu-fechar" src="../IMG/fecharMenu.png" alt=""> -->
-                <a class="navbar-brand" id="logo" href="/Projeto-Integrador/HOME/home.html"><img class=""
+                <button onclick="toggleMenu();ChangeBG()" id="btn"></button>
+                <a class="navbar-brand" id="logo" href="home.html"><img class=""
                         src="../IMG/logowtext.png" width="20%">
                 </a>
                 <div class="navbar-scroll text-white" id="navbarSupportedContent">
-                    <ul class="nav nav-tabs justify-content-center me-auto, mb-2, mb-lg-0, me-2" id="menu-nav">
+                    <ul class="nav nav-tabs justify-content-center" id="menu-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#">A DEVSet</a>
+                            <a class="nav-link text-white" aria-current="page" href="../Sobre/sobre.html">A DEVSet</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" aria-current="page" href="../imoveis/index.html">Imóveis</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link text-white" href="#">Contato</a>
+                            <a class="nav-link text-white" href="../Contato/contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Portal do Corretor</a>
+                            <a class="nav-link text-white" href="../Portal/portal.html">Portal do Corretor</a>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +60,7 @@
                                     <li><img src="../imgs/icons/iconHighTech.png">Apartamento High-tech</li>
                                 </ul>
                                 <a href="../Apartamentos/Apartamento Expand Pinheiros/index.html"
-                                    class="btn btn-primary text-white" style="width: 20%;">Saiba Mais</a>
+                                    class="btn text-white" style="width: 50%; background-color: #29C6ED;">Saiba Mais</a>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="4000">
@@ -76,7 +75,7 @@
                                     <li><img src="../imgs/icons/iconHighTech.png">Apartamento High-tech</li>
                                 </ul>
                                 <a href="../Apartamentos/Apartamento Solo Madrid/index.html"
-                                    class="btn btn-primary text-white" style="width: 20%;">Saiba Mais</a>
+                                    class="btn text-white" style="width: 50%; background-color: #29C6ED;">Saiba Mais</a>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="4000">
@@ -91,7 +90,7 @@
                                     <li><img src="../imgs/icons/iconHighTech.png">Apartamento High-tech</li>
                                 </ul>
                                 <a href="../Apartamentos/Apartamento San Paolo/ap.html"
-                                    class="btn btn-primary text-white" style="width: 20%;">Saiba Mais</a>
+                                    class="btn text-white" style="width: 50%; background-color: #29C6ED;">Saiba Mais</a>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="4000">
@@ -105,8 +104,8 @@
                                     <li><img src="../imgs/icons/iconCarro.png">4 vagas determinadas</li>
                                     <li><img src="../imgs/icons/iconHighTech.png">Apartamento High-tech</li>
                                 </ul>
-                                <a href="../Apartamentos/Apartamento Primo/ap1.html" class="btn btn-primary text-white"
-                                    style="width: 20%;">Saiba Mais</a>
+                                <a href="../Apartamentos/Apartamento Primo/ap1.html" class="btn text-white" 
+                                style="width: 50%; background-color: #29C6ED;">Saiba Mais</a>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="4000">
@@ -122,49 +121,10 @@
                                     <li><img src="../imgs/icons/iconHighTech.png">Apartamento High-tech</li>
                                 </ul>
                                 <a href="../Apartamentos/Aparatamento Casa Mariana/ap2.html"
-                                    class="btn btn-primary text-white" style="width: 20%;">Saiba Mais</a>
+                                    class="btn text-white" style="width: 50%; background-color: #29C6ED;">Saiba Mais</a>
                             </div>
                         </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="../imgs/apt/galeria/Saphir-1.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block caption">
-                                <h2>Apartamento Saphir Morgado de Mateus</h2>
-                                <ul class="icons-apt" type="none">
-                                    <li><img src="../imgs/icons/iconMedidas.png">267m²</li>
-                                    <li><img src="../imgs/icons/iconComodos.png">4 suítes</li>
-                                    <li><img src="../imgs/icons/star.png">Cobertura Duplex de 455m²</li>
-                                    <li><img src="../imgs/icons/iconCarro.png">6 ou 7 vagas determinadas</li>
-                                    <li><img src="../imgs/icons/iconHighTech.png">Apartamento High-tech</li>
-                                </ul>
-                                <a href="../Apartamentos/Apartamento Saphir/ap3.html" class="btn btn-primary text-white"
-                                    style="width: 20%;">Saiba Mais</a>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="../imgs/apt/galeria/Fachada-da-Cidade1920x1080.jpg" class="d-block w-100"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block caption">
-                                <h2>Apartamento Platinum Tower de Ibirapuera</h2>
-                                <ul class="icons-apt" type="none">
-                                    <li><img src="../imgs/icons/iconMedidas.png">106m² a 459m²</li>
-                                    <li><img src="../imgs/icons/iconHighTech.png">Apartamento High-tech</li>
-                                </ul>
-                                <a href="../Apartamentos/Apartamento Platinum Tower/ap4.html"
-                                    class="btn btn-primary text-white" style="width: 20%;">Saiba Mais</a>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="../imgs/apt/galeria/Banner_Park-Avenue.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block caption">
-                                <h2>Park Avenue</h2>
-                                <ul class="icons-apt" type="none">
-                                    <li><img src="../imgs/icons/iconDiamond.png">Alto Luxo</li>
-                                    <li><img src="../imgs/icons/iconHighTech.png">Apartamento High-tech</li>
-                                </ul>
-                                <a href="../Apartamentos/Apartamento Park Avenue/ap5.html"
-                                    class="btn btn-primary text-white" style="width: 20%;">Saiba Mais</a>
-                            </div>
-                        </div>
+                    
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                         data-bs-slide="prev">
@@ -186,7 +146,7 @@
                         <div class="card-body">
                             <img src="../IMG/logo.png" class="card-img-top" id="img-about" alt="...">
                             <h2 class="card-title"
-                                style="text-align: center; margin-bottom: 30px;border-bottom: 2px white;">Sobre a DEVSet
+                                style="text-align: center; margin-bottom: 30px;border-bottom: 2px white; color: #29c6ed;">Sobre a DEVSet
                             </h2>
                             <p class="card-text text-white" style="text-align:left;">Fundada em 1972, a DEVSet
                                 Incorporadora reuniu, ao longo de
@@ -202,17 +162,17 @@
                 </ul>
             </div>
         </section>
-        <section class="section-cards px-5">
+        <section class="section-cards">
             <div class="container">
                 <h1
-                    style="text-align: center;margin-bottom: 50px;color: rgb(19, 88, 134);border-bottom: 2px solid rgb(19, 88, 134);padding-bottom: 40px;font-weight: bold;">
+                    style="text-align: center;margin-bottom: 50px;color: #29c6ed;border-bottom: 2px solid #29c6ed;padding-bottom: 40px;font-weight: 300;">
                     Conteúdos DEVSet</h1>
                 <div class="cards">
                     <div class="card-body cards-body">
                         <img src="../IMG/1011_DEVSET_Inbound_Os-beneficios-de-ter-um-Gerador-Full.jpg"
                             class="card-img-top" alt="...">
                         <h6 class="card-title"
-                            style="margin-top:25px; color:rgb(19, 88, 134);font-weight: bold;border-bottom:1px solid rgb(19, 88, 134);padding-bottom: 10px;">
+                            style="margin-top:25px; color:#29c6ed;font-weight: bold;border-bottom:1px solid #29c6ed;padding-bottom: 10px;">
                             Os benefícios de ter um gerador de energia elétrica
                             full no condomínio</h6>
                         <p class="card-text">Um condomínio de alto padrão deve ser pensado nos mínimos detalhes para
@@ -225,13 +185,13 @@
                             o
                             gerador de energia elétrica full.</p>
                         <br>
-                        <a href="#" class="btn btn-primary text-white" style="width: 100%;">Leia Mais</a>
+                        <a href="#" class="btn text-white" style="width: 100%; background-color: #29c6ed;">Leia Mais</a>
                     </div>
                     <div class="card-body cards-body">
                         <img src="../IMG/1005_DEVSET_Inbound_Morar-em-um-consominio-com-quadra.jpg" class="card-img-top"
                             alt="...">
                         <h6 class="card-title"
-                            style="margin-top:25px;color:rgb(19, 88, 134);font-weight: bold;border-bottom:1px solid rgb(19, 88, 134);padding-bottom: 10px;">
+                            style="margin-top:25px;color:#29c6ed;font-weight: bold;border-bottom:1px solid #29c6ed;padding-bottom: 10px;">
                             Um condomínio com quadra de tênis permite que os
                             treinos nunca parem</h6>
                         <p class="card-text">Os atletas que participam de torneios sabem: o treino é fundamental e deve
@@ -239,16 +199,17 @@
                             constante. O US Open fechou a temporada dos principais torneios de tênis do ano, mas, em
                             janeiro, já retornamos com o Australian Open, seguido do Roland Garros em maio e do
                             Wimbledon em
-                            julho. Os tenistas precisarão continuar na melhor forma, treinando durante esses quatro
+                            julho.
+                            Os tenistas precisarão continuar na melhor forma, treinando durante esses quatro
                             meses de
                             intervalo.</p>
                         <br>
-                        <a href="#" class="btn btn-primary text-white" style="width: 100%;">Leia Mais</a>
+                        <a href="#" class="btn text-white" style="width: 100%; background-color: #29c6ed;">Leia Mais</a>
                     </div>
                     <div class="card-body cards-body">
                         <img src="../IMG/0914_DEVSET_blog_inbound_alto-de-Pinhieros.jpg" class="card-img-top" alt="...">
                         <h6 class="card-title"
-                            style="margin-top:25px; color:rgb(19, 88, 134);font-weight: bold;border-bottom:1px solid rgb(19, 88, 134);padding-bottom: 10px;">
+                            style="margin-top:25px; color:#29c6ed;font-weight: bold;border-bottom:1px solid #29c6ed;padding-bottom: 10px;">
                             Por que morar em Alto de Pinheiros?</h6>
                         <p class="card-text">O Alto de Pinheiros é um dos bairros nobres de São Paulo e que mais encanta
                             seus visitantes. Os que passeiam pela região sonham em morar por lá por diversas razões. Uma
@@ -260,7 +221,7 @@
                             melhores
                             bairros de São Paulo. Vamos conhecer os motivos?</p>
                         <br>
-                        <a href="#" class="btn btn-primary text-white" style="width: 100%;">Leia Mais</a>
+                        <a href="#" class="btn text-white" style="width: 100%; background-color: #29c6ed;">Leia Mais</a>
                     </div>
                 </div>
             </div>
@@ -284,8 +245,8 @@
                         <option value="Rio Grande do sul"></option>
                         <option value="Outra"></option>
                     </datalist><br>
-                    <button class="btn btn-primary text-white"
-                        style="width: 20%;margin:10px;border-radius: 12px;font-size: large;min-width: 320px;"
+                    <button class="btn text-white"
+                        style="width: 20%;margin:10px;border-radius: 5px;font-size: 15px;min-width: 320px; background-color: #29C6ED; margin-top: 2%;"
                         id="btn-form">CADASTRE-SE
                         AGORA</button>
                     <ul type='none' id="users" style="margin-top: 10px;">
@@ -329,10 +290,12 @@
         <div class="boxsFooter" id="box3Footer">
             <div>
                 <p id="pBox3">Siga a DevSet</p>
-                <img class="iconsFooter iconsBox3" src="../footer/imgs/icons/iconFace.png" alt="">
-                <img class="iconsFooter iconsBox3" src="../footer/imgs/icons/iconInsta.png" alt="">
-                <img class="iconsFooter iconsBox3" id="iconYoutube" src="../footer/imgs/icons/iconYoutube.png" alt="">
-                <img class="iconsFooter iconsBox3" src="../footer/imgs/icons/iconLinkedin.png" alt="">
+                <div class="iconesDiv">
+                    <div class="iconesFooter iconeYoutube"></div>
+                    <div class="iconesFooter iconeFace"></div>
+                    <div class="iconesFooter iconeInsta"></div>
+                    <div class="iconesFooter iconeLinkedin"></div>
+                </div>
             </div>
             <div id="copyright">
                 <p class="pBox1" id="pCopyright">

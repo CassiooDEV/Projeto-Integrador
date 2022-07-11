@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #1e1e20;
+}
+.H1-sobre {
+   
+    color: #29c6ed;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+#container-sobre {
+    padding: 4%;
+    background-color: #242428;
+
+}
+.P-sobre {
+    color: #888888;
+}
+#numeros-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 2%;
+    margin-top: 8%;
+}
+.numeros-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.numeros-div p {
+    font-size: 18px;
+}
+
+.P-div p {
+    
+    padding: 0 !important;
+
+}
+.P-div {
+    text-align: center;
+}
+.P-numero {
+    font-size: 75px !important;
+    font-weight: bold;
+    height: 85px;
+    margin-top: -40px !important;
+    margin-bottom: 10px;
+    
+}
+
+@media all and (max-width: 1023px){
+    #imgLogoFooter{
+        max-width: 20%;
+    }
+    #nomeLogo{
+        font-size: 14px;
+    }
+    #subtituloLogo{
+        font-size: 9px !important;;
+    }
+    #pCopyright{
+        font-size: 9px;
+    }
+    .iconsFooter{
+        max-width: 8%;
+    }
+    .pBox2{
+        margin-top: 0;
+        font-size: 11px;
+    }
+    #pBox3{
+        font-size: 14px;
+    }
+    #iconYoutube{
+        max-width: 9%;
+    }
+    #numeros-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .numeros-div {
+        margin: 5% 0;
+    }
+    .P-numero {
+        font-size: 50px;
+    }
+}
+
+@media all and (max-width: 850px){
+    #imgLogoFooter{
+        max-width: 17%;
+    }
+    #nomeLogo{
+        font-size: 13px;
+    }
+    #subtituloLogo{
+        font-size: 8px !important;
+    }
+    #pCopyright{
+        font-size: 7px;
+    }
+    .iconsFooter{
+        max-width: 8%;
+    }
+    .pBox2{
+        font-size: 9px;
+    }
+    #pBox3{
+        font-size: 12px;
+    }
+    #iconYoutube{
+        max-width: 8%;
+    }
+}
+
+@media all and (max-width: 650px){
+   #footer-container{
+    flex-direction: column;
+   }
+   .boxsFooter{
+    width: 96%;
+   }
+   #nomeLogo{
+    font-size: 18px;
+   }
+   #subtituloLogo{
+    font-size: 11px !important;
+   }
+   #linksFooterDiv{
+    flex-direction: column;
+    align-items: center;
+   }
+   .linksFooter{
+    font-size: 14px;
+    margin: .5%;
+   }
+   .box2FooterDivs{
+    justify-content: center;
+   }
+   .box2FooterDivs img{
+    max-height: 20px;
+    max-width: 20%;
+    align-self: center;
+    margin-right: 1%;
+   }
+   .pBox2{
+    margin-top: 3%;
+    font-size: 14px;
+   }
+   #box3Footer{
+    text-align: center;
+   }
+   #pBox3{
+    font-size: 15px;
+    border: none;
+    padding-bottom: 0;
+   }
+   .iconsBox3{
+    max-width: 7%;
+   }
+   #iconYoutube{
+    max-width: 7.5%;
+   }
+   #pCopyright{
+    border-top: 1px solid gray;
+    padding-top: 2%;
+    font-size: 10px;
+   }
+   #logo{
+    text-align: center;
+   }
+}
+#btn {
+    display: none;
+}
+
+    /* Fim da header */
+
+
+    /* Responsividade */
+@media (max-width: 600px) {
+    #menu-nav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        height: 0;
+        background: #242428;
+        transition: .4s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu-nav {
+        height: 50vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu-nav a {
+        padding: 1rem 0;
+        margin: 20px 1rem;
+        text-align: center;
+        font-size: 1rem;
+        border-bottom: 2px solid rgb(19, 88, 134);
+        padding: 20px;
+    }
+
+    #btn {
+        transition: 0.2s;
+        padding: 13px;
+        background-color: transparent;
+        background-image: url(../imgs/icons/menu.png);
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        display: block;
+        padding: 20px;
+        position: absolute;
+        top: 15%;
+        right: 2%;
+        }
+
+    #btn.alt {
+        transition: 0.1s;
+        background-image: url(../imgs/icons/close.png);
+        background-color: transparent;
+    }
+
+}

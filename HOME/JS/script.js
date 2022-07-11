@@ -44,29 +44,21 @@ function verifState() {
         vState = true;
     }
 }
+// HEADER
 
-// var botaoMenu = document.getElementById('botao-menu');
-// var botaoMenuFechar = document.getElementById('botao-menu-fechar')
-// var menu = document.getElementById('menu-nav');
+const botao = document.getElementById('b');
 
-// botaoMenu.addEventListener('click', mostraMenu);
-// botaoMenuFechar.addEventListener('click', fechaMenu)
+function toggleMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+}
 
-// function mostraMenu(){
-//     if (window.matchMedia("(max-width:600px)").matches) {
-//         menu.style.display = 'block';
-//         botaoMenu.style.display = 'none'
-//         botaoMenuFechar.style.display = 'block'
-//       }
-// }
+btn.addEventListener('click', toggleMenu);
 
-// function fechaMenu(){
-//     if (window.matchMedia("(max-width:600px)").matches) {
-//         menu.style.display = 'none';
-//         botaoMenu.style.display = 'block'
-//         botaoMenuFechar.style.display = 'none'
-//     }
-// }
+function ChangeBG() {
+    document.getElementById('btn').classList.contains('alt')
+        ? document.getElementById('btn').classList.remove('alt')
+        : document.getElementById('btn').classList.add('alt');
+}
 
-
-
+// Fim do header

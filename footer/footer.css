@@ -101,6 +101,54 @@
     max-width: 11%;
 }
 
+.iconesDiv{
+    display: flex;
+}
+
+.iconesFooter{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.iconesFooter:hover{
+    cursor: pointer;
+}
+
+.iconeYoutube{
+    background-image: url(./imgs/icons/iconYoutube.png);
+    width: 43px;
+    height: 43px;
+}
+
+.iconeYoutube:hover{
+    background-image: url(./imgs/icons/iconYoutubeColorido.png);
+}
+
+.iconeFace{
+    background-image: url(./imgs/icons/iconFace.png);
+}
+
+.iconeFace:hover{
+    background-image: url(./imgs/icons/iconFaceColorido.png);
+}
+
+.iconeInsta{
+    background-image: url(./imgs/icons/iconInsta.png);
+}
+
+.iconeInsta:hover{
+    background-image: url(./imgs/icons/iconInstaColorido.png);
+}
+
+.iconeLinkedin{
+    background-image: url(./imgs/icons/iconLinkedin.png);
+}
+
+.iconeLinkedin:hover{
+    background-image: url(./imgs/icons/iconLinkedinColorido.png);
+}
+
 .iconsBox3:hover{
     filter: brightness(120%);
     cursor: pointer;
@@ -158,6 +206,9 @@
     }
     #iconYoutube{
         max-width: 8%;
+    }
+    .iconesDiv{
+        justify-content: center;
     }
 }
 
