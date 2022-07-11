@@ -222,7 +222,7 @@ body::-webkit-scrollbar{
         background-position: center;
     }
     .card-about{
-        height: 90% !important;
+        height: max-content !important;
         left: 0 !important;
         right: 0 !important;
         top: 0 !important;
