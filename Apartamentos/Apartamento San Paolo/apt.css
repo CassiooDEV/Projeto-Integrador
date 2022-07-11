@@ -83,6 +83,8 @@ header {
     margin: 5%;
     display: flex;
     font-size: 17px;
+    width: 90%;
+    justify-content: center;
 }
 
 .localApt .iconSec1Apt {
@@ -92,7 +94,7 @@ header {
 }
 
 .divDescricaoApt {
-    width: 70%;
+    width: 90%;
 }
 
 .descricaoApt {
