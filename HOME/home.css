@@ -227,8 +227,7 @@ body::-webkit-scrollbar{
         right: 0 !important;
         top: 0 !important;
         bottom: 0 !important;
-        padding-top: 10%;
-        margin: 2% auto !important;
+        margin:auto !important;
         background-color: rgba(0, 0, 0, 0.521)!important;
         border-radius: 0 !important;
     }
