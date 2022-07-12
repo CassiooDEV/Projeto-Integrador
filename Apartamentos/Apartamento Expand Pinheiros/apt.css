@@ -83,6 +83,8 @@ header {
     margin: 5%;
     display: flex;
     font-size: 17px;
+    width: 90%;
+    justify-content: center;
 }
 
 .localApt .iconSec1Apt {
@@ -92,7 +94,7 @@ header {
 }
 
 .divDescricaoApt {
-    width: 70%;
+    width: 90%;
 }
 
 .descricaoApt {
@@ -301,6 +303,20 @@ header {
 .iframe-local-div {
     width: 600px;
     height: 350px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #29c6ed;
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #242428;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+#menu-nav::-webkit-scrollbar-thumb, #menu-nav::-webkit-scrollbar, #menu-nav::-webkit-scrollbar-track{
+    display: none;
 }
 
 @media all and (max-width: 1000px) {

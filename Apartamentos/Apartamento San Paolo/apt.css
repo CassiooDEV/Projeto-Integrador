@@ -319,6 +319,20 @@ header {
     margin: 15px;
 }
 
+body::-webkit-scrollbar-thumb{
+    background-color: #29c6ed;
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #242428;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+#menu-nav::-webkit-scrollbar-thumb, #menu-nav::-webkit-scrollbar, #menu-nav::-webkit-scrollbar-track{
+    display: none;
+}
+
 @media all and (max-width: 1000px) {
     .galeria {
         grid-template-columns: repeat(2, 1fr);
@@ -426,8 +440,8 @@ header {
     }
 
     #iframe-div {
-        width: 300px;
-        height: 220px;
+        width: 90%;
+        height: 320px;
     }
 
     .iframe-local-div {
