@@ -276,6 +276,9 @@ body::-webkit-scrollbar{
 }
 
 @media all and (max-width: 650px) {
+    #logo{
+        text-align: center;
+    }
     #footer-container {
         flex-direction: column;
     }

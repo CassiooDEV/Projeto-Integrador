@@ -289,6 +289,9 @@ body::-webkit-scrollbar{
     padding-top: 2%;
     font-size: 10px;
    }
+   #logo{
+    text-align: center;
+   }
 }
 /*Menu do kauanty*/
 
