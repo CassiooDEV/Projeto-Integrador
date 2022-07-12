@@ -27,13 +27,13 @@ main {
 }
 
 .pictures {
-    background-image: url(../IMG/apartamento-de-luxo-itaim-bibi-1000x600.jpg);
+    background-image: url(./IMG/apartamento-de-luxo-itaim-bibi-1000x600.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .about {
-    background-image: url(../IMG/0617_DEVSet_Banner_Site_02.jpg);
+    background-image: url(./IMG/0617_DEVSet_Banner_Site_02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -310,7 +310,7 @@ body::-webkit-scrollbar{
         transition: 0.2s;
         padding: 13px;
         background-color: transparent;
-        background-image: url(../imgs/icons/menu.png);
+        background-image: url(/imgs/icons/menu.png);
         background-size: cover;
         border: none;
         cursor: pointer;
@@ -323,7 +323,7 @@ body::-webkit-scrollbar{
 
     #btn.alt {
         transition: 0.1s;
-        background-image: url(../imgs/icons/close.png);
+        background-image: url(/imgs/icons/close.png);
         background-color: transparent;
     }
 
